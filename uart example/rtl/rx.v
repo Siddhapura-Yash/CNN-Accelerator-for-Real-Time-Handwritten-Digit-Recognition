@@ -21,18 +21,13 @@ module rx (
   reg [7:0]     r_Rx_Byte     = 0;
   reg           r_Rx_DV       = 0;
   reg [2:0]     r_SM_Main     = 0;
-   
-  // Purpose: Double-register the incoming data.
-  // This allows it to be used in the UART RX Clock Domain.
-  // (It removes problems caused by metastability)
+
   always @(posedge i_Clock)
     begin
       r_Rx_Data_R <= i_Rx_Serial;
       r_Rx_Data   <= r_Rx_Data_R;
     end
    
-   
-  // Purpose: Control RX state machine
   always @(posedge i_Clock)
     begin
        

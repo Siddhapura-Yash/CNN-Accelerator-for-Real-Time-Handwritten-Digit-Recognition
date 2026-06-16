@@ -1,9 +1,3 @@
-/*
-things to do 
-
-make reg for all the bias so it will not read from multiple ports more than 2 
-
-*/
 module tb;
 
 localparam DATA_WIDTH = 8;

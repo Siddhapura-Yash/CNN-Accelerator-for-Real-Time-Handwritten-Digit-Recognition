@@ -24,9 +24,6 @@ img = cv2.resize(img, (28, 28))
 # normalize to 0-1
 img = img / 255.0
 
-# FIX: convert to uint8 (0 to 255) to match the int8 quantization scale used during training.
-# The original code used * 127, halving the input dynamic range and producing
-# weak activations in the conv layer. Weights were quantized assuming 0..255 range.
 img_int8 = np.round(img * 255).astype(np.uint8)
 
 # flatten

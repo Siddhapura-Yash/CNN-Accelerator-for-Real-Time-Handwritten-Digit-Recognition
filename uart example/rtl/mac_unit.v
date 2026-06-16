@@ -1,6 +1,3 @@
-//need to change for signed cuz INT 8 conversion will be have +ve and -ve number both so mac unit should work for both number 
-
-//PROBLEM : multiplying with pixel and biases gives wrong answer
 module mac #(parameter DATA_WIDTH = 8, KERNEL_SIZE = 3)(
     input clk,
     input rst,
