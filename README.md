@@ -92,7 +92,8 @@ CNN-Accelerator-for-Real-Time-Handwritten-Digit-Recognition
   <img src="doc/images/result.gif" width="500">
 </p>
 
-YouTube Demo: [https://youtube.com/shorts/lP0CcqOGTO4?si=nFGsThKfcxfNwQfs]
+**YouTube Demo**: [https://youtube.com/shorts/lP0CcqOGTO4?si=nFGsThKfcxfNwQfs] <br>
+**Blog** : https://medium.com/@siddhapurayash09/how-i-built-a-cnn-accelerator-on-fpga-using-verilog-32bb0fd3b450
 
 ---
 
@@ -111,4 +112,5 @@ The design has been successfully synthesized and can operate at frequencies up t
 ## License
 
 This project is released under the MIT License.
+
 
